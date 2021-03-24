@@ -1,0 +1,882 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-01 17:36+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: easybuggy/views.py:105
+msgid "title.adminmain.page"
+msgstr "Main Page for Administrators"
+
+#: easybuggy/views.py:121 easybuggy/views.py:483 easybuggy/views.py:660
+#: easybuggy/views.py:689 easybuggy/views.py:730
+msgid "title.login.page"
+msgstr "Login Page for Administrators"
+
+#: easybuggy/views.py:130 easybuggy/views.py:145 easybuggy/views.py:493
+#: easybuggy/views.py:514 easybuggy/views.py:679 easybuggy/views.py:699
+#: easybuggy/views.py:717
+msgid "msg.authentication.fail"
+msgstr "Authentication failed. Please login again."
+
+#: easybuggy/views.py:155
+msgid "title.deadlock.page"
+msgstr "Detect Deadlock"
+
+#: easybuggy/views.py:156
+msgid "msg.note.deadlock"
+msgstr "Deadlock occurs after continuously loading this page few times."
+
+#: easybuggy/views.py:190
+msgid "msg.dead.lock.detected"
+msgstr "Deadlock is detected."
+
+#: easybuggy/views.py:192
+msgid "msg.dead.lock.not.occur"
+msgstr "Deadlock has not occurred yet."
+
+#: easybuggy/views.py:198
+msgid "title.deadlock2.page"
+msgstr "Batch Update of Users"
+
+#: easybuggy/views.py:199
+msgid "msg.note.deadlock2"
+msgstr ""
+"If you open two windows (or tabs) and sort in the ascending order of user ID "
+"and click the 'update' button on one window immediately after you sort in "
+"the descending order and click the 'update' button on the other, then "
+"deadlock occurs in database. However, deadlock does not occur when using "
+"default DB (SQLite) that does not support row locking"
+
+#: easybuggy/views.py:218
+msgid "msg.update.records"
+msgstr "Updated %(count)s records."
+
+#: easybuggy/views.py:221
+msgid "msg.deadlock.occurs"
+msgstr "A lock could not be obtained due to a deadlock."
+
+#: easybuggy/views.py:247
+msgid "title.memoryleak.page"
+msgstr "Memory Usage"
+
+#: easybuggy/views.py:248
+msgid "msg.note.memoryleak"
+msgstr "Memory leak occurs every time you load this page."
+
+#: easybuggy/views.py:274
+msgid "title.netsocketleak.page"
+msgstr "Measure Response Time"
+
+#: easybuggy/views.py:275
+msgid "msg.note.netsocketleak"
+msgstr "Network socket leak occurs every time you load this page."
+
+#: easybuggy/views.py:297 easybuggy/views.py:522 easybuggy/views.py:590
+msgid "msg.unknown.exception.occur"
+msgstr "Unknown exception occurs."
+
+#: easybuggy/views.py:305
+msgid "title.dbconnectionleak.page"
+msgstr "User List"
+
+#: easybuggy/views.py:306
+msgid "msg.note.dbconnectionleak"
+msgstr ""
+"Database connection leak occurs if using an external RDBMS such as MySQL. "
+"Please edit <code>settings.py</code> if using an external RDBMS."
+
+#: easybuggy/views.py:322
+msgid "title.filedescriptorleak.page"
+msgstr "Access History"
+
+#: easybuggy/views.py:323
+msgid "msg.note.filedescriptorleak"
+msgstr "File descriptor leak occurs every time you load this page."
+
+#: easybuggy/views.py:359
+msgid "title.threadleak.page"
+msgstr "Display Current Thread Count"
+
+#: easybuggy/views.py:360
+msgid "msg.note.threadleak"
+msgstr "Thread leak occurs every time you load this page."
+
+#: easybuggy/views.py:370
+msgid "title.mojibake.page"
+msgstr "Capitalize String"
+
+#: easybuggy/views.py:371 easybuggy/views.py:455
+msgid "msg.enter.string"
+msgstr "Please enter a string."
+
+#: easybuggy/views.py:372
+msgid "msg.note.mojibake"
+msgstr "Mojibake occurs if you enter a multi-byte string."
+
+#: easybuggy/views.py:384
+msgid "title.intoverflow.page"
+msgstr "The Distance from Earth to the Moon"
+
+#: easybuggy/views.py:385
+msgid "msg.note.intoverflow"
+msgstr ""
+"Integer overflow occurs if you enter a number greater than or equal to 63."
+
+#: easybuggy/views.py:407
+msgid "msg.answer.is.correct"
+msgstr "Your answer is correct!"
+
+# "If keeping on loading this page, OutOfMemoryError is finally thrown."
+#: easybuggy/views.py:415
+msgid "title.roundofferror.page"
+msgstr "Easy Subtraction"
+
+#: easybuggy/views.py:416
+msgid "msg.note.roundofferror"
+msgstr "Round off error occurs if you enter 1."
+
+#: easybuggy/views.py:428
+msgid "title.truncationerror.page"
+msgstr "Decimal Division"
+
+#: easybuggy/views.py:429
+msgid "msg.note.truncationerror"
+msgstr "Truncation error occurs if you enter 3 or 7 or 9."
+
+#: easybuggy/views.py:441
+msgid "title.lossoftrailingdigits.page"
+msgstr "Decimal Addition"
+
+#: easybuggy/views.py:442
+msgid "msg.note.lossoftrailingdigits"
+msgstr "Loss of trailing digits occurs if you enter 0.0000000000000001."
+
+#: easybuggy/views.py:454
+msgid "title.xss.page"
+msgstr "Reverse String"
+
+#: easybuggy/views.py:456 templates/xss.html:16
+msgid "msg.note.xss"
+msgstr ""
+"JavaScript is executed if you enter name to <code>>tpircs/<;)eikooc."
+"tnemucod(trela>tpIrcs<</code>"
+
+#: easybuggy/views.py:467
+msgid "title.sqlijc.page"
+msgstr "Search Your Secret Number"
+
+#: easybuggy/views.py:468
+msgid "msg.note.sqlijc"
+msgstr ""
+"You can see a secret number if you enter <code>Mark</code> and "
+"<code>password</code>. You can see other users information if you enter "
+"password to <code>' OR '1'='1</code>"
+
+#: easybuggy/views.py:484
+msgid "msg.note.ldap.injection"
+msgstr ""
+"You can login with <code>admin</code> and <code>password</code>. You can "
+"also bypass authentication and login with <code>*)(|(objectClass=*</code> and "
+"password to <code>aaaaaaa)</code>."
+
+#: easybuggy/views.py:519
+msgid "msg.ldap.access.fail"
+msgstr ""
+"Cannot access to the LDAP server, please startup an LDAP server and import "
+"<code> test-server.ldif </code>. It is also necessary to review the LDAP "
+"settings of <code>config/settings.py</code>."
+
+#: easybuggy/views.py:529
+msgid "title.codeinjection.page"
+msgstr "Performing Basic Numeric Operations"
+
+#: easybuggy/views.py:530
+msgid "msg.note.codeinjection"
+msgstr ""
+"If you enter <code>__import__('os')._exit(0)</code> , then this application "
+"is forcibly finished due to code injection."
+
+#: easybuggy/views.py:541
+msgid "msg.invalid.expression"
+msgstr "Invalid expression : %(exception)s"
+
+#: easybuggy/views.py:549
+msgid "title.commandinjection.page"
+msgstr "Checking Your Mail Address"
+
+#: easybuggy/views.py:550
+msgid "msg.note.commandinjection"
+msgstr ""
+"<code>/important-dir/</code> directory will be removed on this server if you "
+"enter <code>test@gmail.com;rm -fr /important-dir/</code>."
+
+#: easybuggy/views.py:557
+msgid "msg.send.mail.success"
+msgstr "An email has been successfully sent."
+
+#: easybuggy/views.py:559
+msgid "msg.send.mail.failure"
+msgstr "Sending an email failed due to any reason."
+
+#: easybuggy/views.py:561 easybuggy/views.py:817
+msgid "msg.mail.format.is.invalid"
+msgstr "The mail address is an invalid format."
+
+#: easybuggy/views.py:567
+msgid "title.mailheaderinjection.page"
+msgstr "Question to Administrator"
+
+#: easybuggy/views.py:568
+msgid "msg.note.mailheaderinjection"
+msgstr ""
+"If you change the input tag of the subject field to a textarea tag by "
+"browser's developer mode and set it to <code>[subject][line break]Bcc :[a "
+"mail address]</code>, then you can send a mail to the address."
+
+#: easybuggy/views.py:579
+msgid "msg.mail.is.empty"
+msgstr "Please enter subject and content."
+
+#: easybuggy/views.py:582 templates/dbconnectionleak.html:8
+#: templates/deadlock2.html:19 templates/sqlijc.html:8 templates/sqlijc.html:16
+msgid "label.name"
+msgstr "Name"
+
+#: easybuggy/views.py:582 templates/clickjacking.html:8
+#: templates/dbconnectionleak.html:10 templates/deadlock2.html:21
+msgid "label.mail"
+msgstr "Mail Address"
+
+#: easybuggy/views.py:583 templates/mailheaderinjection.html:23
+msgid "label.content"
+msgstr "Content"
+
+#: easybuggy/views.py:587
+msgid "msg.sent.mail"
+msgstr "The mail was sent successfully."
+
+#: easybuggy/views.py:597
+msgid "title.unrestrictedsizeupload.page"
+msgstr "Reverse Color of Image File"
+
+#: easybuggy/views.py:598
+msgid "msg.note.unrestrictedsizeupload"
+msgstr ""
+"This page is vulnerable for attacks such as DoS because there are no "
+"limitation for uploading file size."
+
+#: easybuggy/views.py:615
+msgid "msg.reverse.color.fail"
+msgstr "The color reversal of the image file fails."
+
+#: easybuggy/views.py:618
+msgid "msg.reverse.color.complete"
+msgstr "The color reversal of the image file has completed."
+
+#: easybuggy/views.py:621
+msgid "msg.not.image.file"
+msgstr "The chosen file is not an image file."
+
+#: easybuggy/views.py:632
+msgid "title.unrestrictedextupload.page"
+msgstr "Convert Gray Scale of Image File"
+
+#: easybuggy/views.py:633
+msgid "msg.note.unrestrictedextupload"
+msgstr ""
+"If you upload HTML file (named index.html) including the following code and "
+"make a user access http://localhost:8080/static/uploadfiles/index.html, then "
+"the user's cookie is sent to attacker's site."
+
+#: easybuggy/views.py:644
+msgid "msg.convert.grayscale.fail"
+msgstr "Gray scale conversion of the image file fails."
+
+#: easybuggy/views.py:647
+msgid "msg.convert.grayscale.complete"
+msgstr "Gray scale conversion of the image file has completed."
+
+#: easybuggy/views.py:661
+msgid "msg.note.brute.force"
+msgstr ""
+"You can login with <code>admin</code> and <code>password</code>. The number "
+"of login attempts is not limited on this page, so the brute force attack is "
+"possible."
+
+#: easybuggy/views.py:690
+msgid "msg.note.open.redirect"
+msgstr ""
+"You can login with <code>admin</code> and <code>password</code>. If you add "
+"<code>goto=[an URL of a malicious site]</code> to the query string, you can "
+"redirect to the malicious site."
+
+#: easybuggy/views.py:731
+msgid "msg.note.verbose.errror.message"
+msgstr ""
+"You can login with <code>admin</code> and <code>password</code>. It is easy "
+"to guess an account who can logs in since authentication error messages on "
+"this page is too detailed."
+
+#: easybuggy/views.py:740
+msgid "msg.account.locked"
+msgstr ""
+"Your account is locked out because the number of login failures exceeds "
+"%(count)s times."
+
+#: easybuggy/views.py:742
+msgid "msg.user.not.exist"
+msgstr "The user does not exist."
+
+#: easybuggy/views.py:744
+msgid "msg.low.alphnum8"
+msgstr "Password is 8 lowercase alphanumeric characters."
+
+#: easybuggy/views.py:759
+msgid "msg.password.not.match"
+msgstr "The password does not match."
+
+#: easybuggy/views.py:772 templates/adminmain.html:8
+msgid "title.csrf.page"
+msgstr "Change Your Password"
+
+#: easybuggy/views.py:773
+msgid "msg.note.csrf"
+msgstr ""
+"This page receives a request that a user does not intend and changes the "
+"user's password."
+
+#: easybuggy/views.py:788
+msgid "msg.passwd.change.failed"
+msgstr "Password change failed."
+
+#: easybuggy/views.py:790
+msgid "msg.passwd.is.too.short"
+msgstr "The password must be at least 8 characters."
+
+#: easybuggy/views.py:799 templates/adminmain.html:9
+msgid "title.clickjacking.page"
+msgstr "Change Your Mail"
+
+#: easybuggy/views.py:800
+msgid "msg.note.clickjacking"
+msgstr ""
+"This page receives a request that a user does not intend and changes the "
+"user's mail address."
+
+#: easybuggy/views.py:815
+msgid "msg.mail.change.failed"
+msgstr "Mail address change failed."
+
+#: easybuggy/views.py:825
+msgid "title.xxe.page"
+msgstr "Batch Update of Users"
+
+#: easybuggy/views.py:826
+msgid "msg.note.xxe"
+msgstr ""
+"If you upload the following XML file, you can display the password file (/"
+"etc/passwd) on the Linux server."
+
+#: easybuggy/views.py:842
+msgid "msg.not.xml.file"
+msgstr "The chosen file is not an XML file."
+
+#: templates/adminmain.html:5
+msgid "msg.admin.page.top"
+msgstr "Well come to admins page!!"
+
+#: templates/adminmain.html:7
+msgid "Django administration"
+msgstr ""
+
+#: templates/clickjacking.html:7
+msgid "msg.enter.mail"
+msgstr "Please enter your mail address."
+
+#: templates/clickjacking.html:10 templates/commandinjection.html:12
+#: templates/csrf.html:9 templates/mailheaderinjection.html:27
+#: templates/mojibake.html:10 templates/sqlijc.html:12 templates/xss.html:10
+msgid "label.submit"
+msgstr "Submit"
+
+#: templates/clickjacking.html:12
+msgid "msg.mail.changed"
+msgstr "Your mail address is successfully changed."
+
+#: templates/clickjacking.html:12 templates/csrf.html:11
+msgid "label.goto.admin.page"
+msgstr "Go to admin main page"
+
+#: templates/codeinjection.html:7
+msgid "msg.enter.math.expression"
+msgstr ""
+"Please enter a mathematical expression. You can use <code>math</code> in the "
+"expression. For example, <code>math.sqrt(math.pow(2, 6)) - 5</code>"
+
+#: templates/codeinjection.html:13 templates/intoverflow.html:10
+#: templates/lossoftrailingdigits.html:10 templates/roundofferror.html:10
+#: templates/truncationerror.html:11
+msgid "label.calculate"
+msgstr "Calculate"
+
+#: templates/commandinjection.html:7
+msgid "msg.enter.mail.address"
+msgstr ""
+"Please enter your email address. EasyBuggy will send you an email to confirm "
+"that you can accept it."
+
+#: templates/csrf.html:6
+msgid "msg.enter.passwd"
+msgstr ""
+"When you enter a new password and click the submit button, your password "
+"will be changed."
+
+#: templates/csrf.html:7 templates/login.html:14 templates/sqlijc.html:10
+msgid "label.password"
+msgstr "Password"
+
+#: templates/csrf.html:11
+msgid "msg.passwd.changed"
+msgstr "Your password is successfully changed."
+
+#: templates/dbconnectionleak.html:7 templates/deadlock2.html:12
+#: templates/login.html:10
+msgid "label.user.id"
+msgstr "User ID"
+
+#: templates/dbconnectionleak.html:9 templates/deadlock2.html:20
+msgid "label.phone"
+msgstr "Phone"
+
+#: templates/deadlock2.html:5
+msgid "msg.update.users"
+msgstr "You can update users information."
+
+#: templates/deadlock2.html:8
+msgid "label.update"
+msgstr "Update"
+
+#: templates/filedescriptorleak.html:5
+msgid "description.access.history"
+msgstr "Access history in this page (The latest 15 records)."
+
+#: templates/filedescriptorleak.html:8
+msgid "label.access.time"
+msgstr "Access Time"
+
+#: templates/filedescriptorleak.html:9
+msgid "label.ip.address"
+msgstr "IP Address"
+
+#: templates/filedescriptorleak.html:10
+msgid "label.session.id"
+msgstr "Session ID"
+
+#: templates/header.html:6
+msgid "label.go.to.main"
+msgstr "Go to main page"
+
+#: templates/header.html:10
+msgid "label.login.user.id"
+msgstr "Login User ID"
+
+#: templates/header.html:11
+msgid "label.logout"
+msgstr "Log out"
+
+#: templates/index.html:11
+msgid "description.all"
+msgstr ""
+"Warning: Several links cause severe memory leaks or increase CPU usage "
+"rate. They can make your computer unstable. The results may change depending "
+"on Python version, OS, hardware (memory, CPU) or etc."
+
+#: templates/index.html:21
+msgid "section.troubles"
+msgstr "Troubles"
+
+#: templates/index.html:23
+msgid "description.troubles"
+msgstr "Memory leak, infinite loop, deadlock, and so on:"
+
+#: templates/index.html:26
+msgid "function.name.dead.lock"
+msgstr "Deadlock (Python)"
+
+#: templates/index.html:27
+msgid "function.description.dead.lock"
+msgstr "Deadlock (Python) can occur."
+
+#: templates/index.html:30
+msgid "function.name.dead.lock2"
+msgstr "Deadlock (SQL)"
+
+#: templates/index.html:31
+msgid "function.description.dead.lock2"
+msgstr "Deadlock (SQL) can occur."
+
+#: templates/index.html:34
+msgid "function.name.infinite.loop"
+msgstr "Infinite Loop"
+
+#: templates/index.html:35
+msgid "function.description.infinite.loop"
+msgstr "Infinite loop occurs if you click this link."
+
+#: templates/index.html:38
+msgid "function.name.redirect.loop"
+msgstr "Redirect Loop"
+
+#: templates/index.html:39
+msgid "function.description.redirect.loop"
+msgstr "Redirect loop occurs if you click this link."
+
+#: templates/index.html:42
+msgid "function.name.memory.leak"
+msgstr "Memory Leak"
+
+#: templates/index.html:43
+msgid "function.description.memory.leak"
+msgstr "Memory leak occurs every time you load this page."
+
+#: templates/index.html:46
+msgid "function.name.network.socket.leak"
+msgstr "Network Socket Leak"
+
+#: templates/index.html:47
+msgid "function.description.network.socket.leak"
+msgstr "Network socket leak occurs every time you load this page."
+
+#: templates/index.html:50
+msgid "function.name.database.connection.leak"
+msgstr "Database Connection Leak"
+
+#: templates/index.html:51
+msgid "function.description.database.connection.leak"
+msgstr "Database connection leak occurs every time you load the page."
+
+#: templates/index.html:54
+msgid "function.name.file.descriptor.leak"
+msgstr "File Descriptor Leak"
+
+#: templates/index.html:55
+msgid "function.description.file.descriptor.leak"
+msgstr "File Descriptor Leak occurs every time you load this page."
+
+#: templates/index.html:58
+msgid "function.name.thread.leak"
+msgstr "Thread Leak"
+
+#: templates/index.html:59
+msgid "function.description.thread.leak"
+msgstr "Thread leak occurs every time you load this page."
+
+#: templates/index.html:62
+msgid "function.name.mojibake"
+msgstr "Mojibake"
+
+#: templates/index.html:63
+msgid "function.description.mojibake"
+msgstr "Mojibake can occur."
+
+#: templates/index.html:66
+msgid "function.name.int.overflow"
+msgstr "Integer overflow"
+
+#: templates/index.html:67
+msgid "function.description.int.overflow"
+msgstr "Integer overflow can occur."
+
+#: templates/index.html:70
+msgid "function.name.round.off.error"
+msgstr "Round Off Error"
+
+#: templates/index.html:71
+msgid "function.description.round.off.error"
+msgstr "Round off error can occur."
+
+#: templates/index.html:74
+msgid "function.name.truncation.error"
+msgstr "Truncation Error"
+
+#: templates/index.html:75
+msgid "function.description.truncation.error"
+msgstr "Truncation error can occur."
+
+#: templates/index.html:78
+msgid "function.name.loss.of.trailing.digits"
+msgstr "Loss of Trailing Digits"
+
+#: templates/index.html:79
+msgid "function.description.loss.of.trailing.digits"
+msgstr "Loss of trailing digits can occur."
+
+#: templates/index.html:86
+msgid "section.vulnerabilities"
+msgstr "Vulnerabilities"
+
+#: templates/index.html:88
+msgid "description.vulnerabilities"
+msgstr "XSS, SQL Injection, LDAP injection, and so on："
+
+#: templates/index.html:91
+msgid "function.name.xss"
+msgstr "XSS (Cross Site Scripting)"
+
+#: templates/index.html:92
+msgid "function.description.xss"
+msgstr "There is a cross site scripting vulnerability in this page."
+
+#: templates/index.html:95
+msgid "function.name.sql.injection"
+msgstr "SQL Injection"
+
+#: templates/index.html:96
+msgid "function.description.sql.injection"
+msgstr "There is an SQL injection vulnerability in this page."
+
+#: templates/index.html:99
+msgid "function.name.ldap.injection"
+msgstr "LDAP Injection"
+
+#: templates/index.html:100
+msgid "function.description.ldap.injection"
+msgstr "There is an LDAP injection vulnerability in this page."
+
+#: templates/index.html:103
+msgid "function.name.code.injection"
+msgstr "Code Injection"
+
+#: templates/index.html:104
+msgid "function.description.code.injection"
+msgstr "There is a Code injection vulnerability in this page."
+
+#: templates/index.html:107
+msgid "function.name.os.command.injection"
+msgstr "OS command Injection"
+
+#: templates/index.html:108
+msgid "function.description.os.command.injection"
+msgstr "There is an OS command injection vulnerability in this page."
+
+#: templates/index.html:111
+msgid "function.name.mail.header.injection"
+msgstr "Mail Header Injection"
+
+#: templates/index.html:112
+msgid "function.description.mail.header.injection"
+msgstr "There is a mail header injection vulnerability in this page."
+
+#: templates/index.html:115
+msgid "function.name.unrestricted.size.upload"
+msgstr "Size Unrestricted File Upload"
+
+#: templates/index.html:116
+msgid "function.description.unrestricted.size.upload"
+msgstr ""
+"This page is vulnerable for attacks such as DoS because there are no "
+"limitation for uploading file size."
+
+#: templates/index.html:119
+msgid "function.name.unrestricted.ext.upload"
+msgstr "Extension Unrestricted File Upload"
+
+#: templates/index.html:120
+msgid "function.description.unrestricted.ext.upload"
+msgstr ""
+"This page is vulnerable for attacks such as code injection because there are "
+"no limitation for uploading file extension."
+
+#: templates/index.html:123
+msgid "function.name.brute.force"
+msgstr "Login page that allows brute-force attacks"
+
+#: templates/index.html:124
+msgid "function.description.brute.force"
+msgstr ""
+"This login page is vulnerable for brute-force attack because it does not "
+"have an account lock mechanism."
+
+#: templates/index.html:127
+msgid "function.name.open.redirect"
+msgstr "Login page that allows Open Redirect"
+
+#: templates/index.html:128
+msgid "function.description.open.redirect"
+msgstr "There is an open redirect vulnerability in this login page."
+
+#: templates/index.html:131
+msgid "function.name.verbose.error.message"
+msgstr "Verbose Authentication Error Messages"
+
+#: templates/index.html:132
+msgid "function.description.verbose.error.message"
+msgstr ""
+"It is easy to guess an account who can logs in because authentication error "
+"messages on this page are too detailed."
+
+#: templates/index.html:135
+msgid "function.name.csrf"
+msgstr "CSRF (Cross-site Request Forgery)"
+
+#: templates/index.html:136
+msgid "function.description.csrf"
+msgstr "There is a CSRF vulnerability in the change password page."
+
+#: templates/index.html:139
+msgid "function.name.clickjacking"
+msgstr "Clickjacking"
+
+#: templates/index.html:140
+msgid "function.description.clickjacking"
+msgstr "There is a clickjacking vulnerability in the change mail address page."
+
+#: templates/index.html:143
+msgid "function.name.xxe"
+msgstr "XXE (XML External Entity)"
+
+#: templates/index.html:144
+msgid "function.description.xxe"
+msgstr "There is an XXE vulnerability in this page."
+
+#: templates/intoverflow.html:7
+msgid "msg.question.reach.the.moon"
+msgstr ""
+"How many times would you have to fold a piece of paper (thickness 0.1mm) for "
+"it to be thick enough to reach the moon (384,400 km)?"
+
+#: templates/intoverflow.html:9
+msgid "label.times"
+msgstr "Times"
+
+#: templates/login.html:5
+msgid "msg.need.admin.privilege"
+msgstr "You need admin privileges to go ahead from here."
+
+#: templates/login.html:19
+msgid "label.login"
+msgstr "Login"
+
+#: templates/lossoftrailingdigits.html:7
+msgid "msg.enter.decimal.value"
+msgstr "Please enter the absolute value of a decimal number less than 1."
+
+#: templates/mailheaderinjection.html:8
+msgid "description.send.mail"
+msgstr "You can send a mail to the site administrator."
+
+#: templates/mailheaderinjection.html:11
+msgid "label.your.name"
+msgstr "Your Name"
+
+#: templates/mailheaderinjection.html:15
+msgid "label.your.mail"
+msgstr "Your Mail Address"
+
+#: templates/mailheaderinjection.html:19
+msgid "label.subject"
+msgstr "Subject"
+
+#: templates/memoryleak.html:5
+msgid "label.process.memory.info"
+msgstr "Memory information about the process"
+
+#: templates/mojibake.html:7
+msgid "description.capitalize.string"
+msgstr ""
+"When you enter a string, the capitalized string is shown. For example: "
+"capitalize string -> Capitalize String"
+
+#: templates/mojibake.html:8 templates/xss.html:8
+msgid "label.string"
+msgstr "String"
+
+#: templates/netsocketleak.html:5
+msgid "description.response.time"
+msgstr ""
+"When you add pingurl=[a URL] to query string, the response code and time from "
+"the url is shown."
+
+#: templates/netsocketleak.html:8
+msgid "label.ping.url"
+msgstr "Ping URL"
+
+#: templates/netsocketleak.html:12
+msgid "label.response.code"
+msgstr "Response Code"
+
+#: templates/netsocketleak.html:16
+msgid "label.response.time"
+msgstr "Response Time"
+
+#: templates/roundofferror.html:7 templates/truncationerror.html:7
+msgid "msg.enter.positive.number"
+msgstr "Please enter a positive number."
+
+#: templates/sqlijc.html:7
+msgid "msg.enter.name.and.passwd"
+msgstr "When you enter your name and password, your secret number is shown."
+
+#: templates/sqlijc.html:17
+msgid "label.secret"
+msgstr "Secret"
+
+#: templates/threadleak.html:5
+msgid "label.current.thread.count"
+msgstr "Current Thread Count"
+
+#: templates/truncationerror.html:8
+msgid "label.obelus"
+msgstr "/"
+
+#: templates/unrestrictedextupload.html:8
+#: templates/unrestrictedsizeupload.html:8 templates/xxe.html:16
+msgid "label.history.back"
+msgstr "Back"
+
+#: templates/unrestrictedextupload.html:12
+msgid "msg.convert.grayscale"
+msgstr "You can convert the color of an image file into gray scale."
+
+#: templates/unrestrictedextupload.html:14
+#: templates/unrestrictedsizeupload.html:14 templates/xxe.html:23
+msgid "msg.select.upload.file"
+msgstr "Select a file to upload."
+
+#: templates/unrestrictedextupload.html:15
+#: templates/unrestrictedsizeupload.html:15 templates/xxe.html:24
+msgid "label.upload"
+msgstr "Upload"
+
+#: templates/unrestrictedsizeupload.html:12
+msgid "msg.reverse.color"
+msgstr "You can reverse the color of an image file."
+
+#: templates/xss.html:7
+msgid "description.reverse.string"
+msgstr "When you enter a string, the reversed string is shown."
+
+#: templates/xxe.html:8
+msgid "label.result"
+msgstr "Result"
+
+#: templates/xxe.html:18
+msgid "msg.update.users.by.xml"
+msgstr ""
+"When you upload an XML file of the following format, users can be updated all "
+"at once."

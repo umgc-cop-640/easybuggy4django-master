@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block body %}
+<header>
+    <table style="margin-top: 20px; width: 720px;">
+        <tr>
+            <td rowspan="1" colspan="1">
+                <img src="/static/easybuggy.png" class="bounceInRight animated"/>
+            </td>
+            <td rowspan="1" colspan="1"><span class="glyphicon glyphicon-warning-sign"></span>
+                <span>{% trans 'description.all' %}</span>
+            </td>
+        </tr>
+    </table>
+</header>
+<hr/>
+
+{% if not isOnlyVulnerabilities %}
+<h2>
+    <span class="glyphicon glyphicon-knight"></span>
+    <span>{% trans 'section.troubles' %}</span>
+</h2>
+<p>{% trans 'description.troubles' %}</p>
+<ul>
+    <li><p><a href="{% url 'easybuggy:deadlock' %}" shape="rect">
+        {% trans 'function.name.dead.lock' %}</a>:
+        <span>{% trans 'function.description.dead.lock' %}</span>
+    </p></li>
+    <li><p><a href="{% url 'easybuggy:deadlock2' %}" shape="rect">
+        {% trans 'function.name.dead.lock2' %}</a>:
+        <span>{% trans 'function.description.dead.lock2' %}</span>
+    </p></li>
+    <li><p><a href="{% url 'easybuggy:infiniteloop' %}" target="_blank" shape="rect">
+        {% trans 'function.name.infinite.loop' %}</a>:
+        <span>{% trans 'function.description.infinite.loop' %}</span>
+    </p></li>
+    <li><p><a href="{% url 'easybuggy:redirectloop' %}" target="_blank" shape="rect">
+        {% trans 'function.name.redirect.loop' %}</a>:
+        <span>{% trans 'function.description.redirect.loop' %}</span>
+    </p></li>
+    <li><p><a href="{% url 'easybuggy:memoryleak' %}" shape="rect">
+        {% trans 'function.name.memory.leak' %}</a>:
+        <span>{% trans 'function.description.memory.leak' %}</span>
+    </p></li>
+    <li><p><a href="{% url 'easybuggy:netsocketleak' %}" shape="rect">
+        {% trans 'function.name.network.socket.leak' %}</a>:
+        <span>{% trans 'function.description.network.socket.leak' %}</span>
+    </p></li>
+    <li><p><a href="{% url 'easybuggy:dbconnectionleak' %}" shape="rect">
+        {% trans 'function.name.database.connection.leak' %}</a>:
+        <span>{% trans 'function.description.database.connection.leak' %}</span>
+    </p></li>
+    <li><p><a href="{% url 'easybuggy:filedescriptorleak' %}" shape="rect">
+        {% trans 'function.name.file.descriptor.leak' %}</a>:
+        <span>{% trans 'function.description.file.descriptor.leak' %}</span>
+    </p></li>
+    <li><p><a href="{% url 'easybuggy:threadleak' %}" shape="rect">
+        {% trans 'function.name.thread.leak' %}</a>:
+        <span>{% trans 'function.description.thread.leak' %}</span>
+    </p></li>
+    <li><p><a href="{% url 'easybuggy:mojibake' %}" shape="rect">
+        {% trans 'function.name.mojibake' %}</a>:
+        <span>{% trans 'function.description.mojibake' %}</span>
+    </p></li>
+    <li><p><a href="{% url 'easybuggy:iof' %}" shape="rect">
+        {% trans 'function.name.int.overflow' %}</a>:
+        <span>{% trans 'function.description.int.overflow' %}</span>
+    </p></li>
+    <li><p><a href="{% url 'easybuggy:roe' %}" shape="rect">
+        {% trans 'function.name.round.off.error' %}</a>:
+        <span>{% trans 'function.description.round.off.error' %}</span>
+    </p></li>
+    <li><p><a href="{% url 'easybuggy:te' %}" shape="rect">
+        {% trans 'function.name.truncation.error' %}</a>:
+        <span>{% trans 'function.description.truncation.error' %}</span>
+    </p></li>
+    <li><p><a href="{% url 'easybuggy:lotd' %}" shape="rect">
+        {% trans 'function.name.loss.of.trailing.digits' %}</a>:
+        <span>{% trans 'function.description.loss.of.trailing.digits' %}</span>
+    </p></li>
+</ul>
+{% endif %}
+
+<h2>
+    <span class="glyphicon glyphicon-knight"></span>
+    <span>{% trans 'section.vulnerabilities' %}</span>
+</h2>
+<p>{% trans 'description.vulnerabilities' %}</p>
+<ul>
+    <li><p><a href="{% url 'easybuggy:xss' %}" shape="rect">
+        {% trans 'function.name.xss' %}</a>:
+        <span>{% trans 'function.description.xss' %}</span>
+    </p></li>
+    <li><p><a href="{% url 'easybuggy:sqlijc' %}" shape="rect">
+        {% trans 'function.name.sql.injection' %}</a>:
+        <span>{% trans 'function.description.sql.injection' %}</span>
+    </p></li>
+    <li><p><a href="/admins/main?logintype=ldapijc" shape="rect">
+        {% trans 'function.name.ldap.injection' %}</a>:
+        <span>{% trans 'function.description.ldap.injection' %}</span>
+    </p></li>
+    <li><p><a href="{% url 'easybuggy:codeijct' %}" shape="rect">
+        {% trans 'function.name.code.injection' %}</a>:
+        <span>{% trans 'function.description.code.injection' %}</span>
+    </p></li>
+    <li><p><a href="{% url 'easybuggy:commandijct' %}" shape="rect">
+        {% trans 'function.name.os.command.injection' %}</a>:
+        <span>{% trans 'function.description.os.command.injection' %}</span>
+    </p></li>
+    <li><p><a href="{% url 'easybuggy:mailheaderijct' %}" shape="rect">
+        {% trans 'function.name.mail.header.injection' %}</a>:
+        <span>{% trans 'function.description.mail.header.injection' %}</span>
+    </p></li>
+    <li><p><a href="{% url 'easybuggy:unrestrictedsizeupload' %}" shape="rect">
+        {% trans 'function.name.unrestricted.size.upload' %}</a>:
+        <span>{% trans 'function.description.unrestricted.size.upload' %}</span>
+    </p></li>
+    <li><p><a href="{% url 'easybuggy:unrestrictedextupload' %}" shape="rect">
+        {% trans 'function.name.unrestricted.ext.upload' %}</a>:
+        <span>{% trans 'function.description.unrestricted.ext.upload' %}</span>
+    </p></li>
+    <li><p><a href="/admins/main?logintype=bruteforce" shape="rect">
+        {% trans 'function.name.brute.force' %}</a>:
+        <span>{% trans 'function.description.brute.force' %}</span>
+    </p></li>
+    <li><p><a href="/admins/main?logintype=openredirect&goto=/admin/" shape="rect">
+        {% trans 'function.name.open.redirect' %}</a>:
+        <span>{% trans 'function.description.open.redirect' %}</span>
+    </p></li>
+    <li><p><a href="/admins/main?logintype=verbosemsg" shape="rect">
+        {% trans 'function.name.verbose.error.message' %}</a>:
+        <span>{% trans 'function.description.verbose.error.message' %}</span>
+    </p></li>
+    <li><p><a href="/admins/csrf" shape="rect">
+        {% trans 'function.name.csrf' %}</a>:
+        <span>{% trans 'function.description.csrf' %}</span>
+    </p></li>
+    <li><p><a href="/admins/clickjacking" shape="rect">
+        {% trans 'function.name.clickjacking' %}</a>:
+        <span>{% trans 'function.description.clickjacking' %}</span>
+    </p></li>
+    <li><p><a href="{% url 'easybuggy:xxe' %}" shape="rect">
+        {% trans 'function.name.xxe' %}</a>:
+        <span>{% trans 'function.description.xxe' %}</span>
+    </p></li>
+</ul>
+
+<hr/>
+<footer>
+    <img src="/static/easybuggyL.png"/>Copyright &copy; 2018 T246 OSS Lab, all rights reserved.<br/><br/>
+</footer>
+{% endblock %}

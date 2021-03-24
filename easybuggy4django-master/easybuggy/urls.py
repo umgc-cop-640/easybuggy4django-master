@@ -1,0 +1,40 @@
+from django.conf.urls import url
+from . import views
+
+app_name = "easybuggy"
+
+urlpatterns = [
+    url(r'^$', views.index, name='index'),
+    url(r'^login/*', views.admins_login, name='admins_login'),
+    url(r'^logout/$', views.admins_logout, name='admins_logout'),
+    url(r'^admins/main*', views.main, name='main'),
+    url(r'^admins/csrf/$', views.csrf, name='csrf'),
+    url(r'^admins/clickjacking/$', views.clickjacking, name='clickjacking'),
+    url(r'^ping/$', views.ping, name='ping'),
+    url(r'^deadlock/$', views.deadlock, name='deadlock'),
+    url(r'^deadlock2/$', views.deadlock2, name='deadlock2'),
+    url(r'^infiniteloop/$', views.infiniteloop, name='infiniteloop'),
+    url(r'^redirectloop/$', views.redirectloop, name='redirectloop'),
+    url(r'^memoryleak/$', views.memoryleak, name='memoryleak'),
+    url(r'^netsocketleak/$', views.network_socket_leak, name='netsocketleak'),
+    url(r'^dbconnectionleak/$', views.db_connection_leak, name='dbconnectionleak'),
+    url(r'^filedescriptorleak/$', views.file_descriptor_leak, name='filedescriptorleak'),
+    url(r'^threadleak/$', views.thread_leak, name='threadleak'),
+    url(r'^mojibake/$', views.mojibake, name='mojibake'),
+    url(r'^iof/$', views.integer_overflow, name='iof'),
+    url(r'^lotd/$', views.loss_of_trailing_digits, name='lotd'),
+    url(r'^roe/$', views.round_off_error, name='roe'),
+    url(r'^te/$', views.truncation_error, name='te'),
+    url(r'^xss/$', views.xss, name='xss'),
+    url(r'^sqlijc/$', views.sql_injection, name='sqlijc'),
+    url(r'^codeijct/$', views.code_injection, name='codeijct'),
+    url(r'^commandijct/$', views.command_injection, name='commandijct'),
+    url(r'^mailheaderijct/$', views.mail_header_injection, name='mailheaderijct'),
+    url(r'^unrestrictedsizeupload/$', views.unrestricted_size_upload, name='unrestrictedsizeupload'),
+    url(r'^unrestrictedextupload/$', views.unrestricted_extension_upload, name='unrestrictedextupload'),
+    url(r'^xxe/$', views.xxe, name='xxe'),
+    url(r'^ldapijc/*', views.ldap_injection, name='ldapijc'),
+    url(r'^bruteforce/*', views.brute_force, name='bruteforce'),
+    url(r'^openredirect/*', views.open_redirect, name='openredirect'),
+    url(r'^verbosemsg/*', views.verbose_message, name='verbosemsg'),
+]
